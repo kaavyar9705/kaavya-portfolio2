@@ -35,6 +35,7 @@ const projects = [
       "Developed a playful web app for interns to track common workplace catchphrases and behaviors. Features daily phrase shuffling, Firebase user authentication, and persistent score tracking.",
     technologies: ["React", "Firebase", "Next.js", "Tailwind CSS"],
     type: "Web Application",
+    image: "kaavya-portfolio2/images/bingo.png",
   },
   {
     title: "Personal Portfolio Website",
@@ -53,7 +54,6 @@ const projects = [
     publication: "iConference 2023, Barcelona, Spain",
     type: "Research Project",
   },
-
 ];
 
 export default function Projects() {
@@ -97,6 +97,14 @@ export default function Projects() {
                 )}
               </CardHeader>
               <CardContent className="flex-1 flex flex-col">
+                {project.image && (
+                  <img
+                    src={project.image}
+                    alt={`${project.title} Screenshot`}
+                    className="rounded-lg shadow mb-4 border"
+                  />
+                )}
+
                 <p className="text-gray-600 mb-4 flex-1">
                   {project.description}
                 </p>
