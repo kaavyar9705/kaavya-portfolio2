@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import headshot from "../images/headshot.jpg";
 
 export default function Hero() {
   return (
@@ -76,7 +77,7 @@ export default function Hero() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full blur-2xl opacity-30 scale-110"></div>
               <img
-                src="/images/headshot.jpg"
+                src="/kaavya-portfolio2/images/headshot.jpg"
                 alt="Kaavya Radhakrishnan"
                 className="relative w-80 h-80 object-cover rounded-full shadow-2xl border-4 border-white"
               />
