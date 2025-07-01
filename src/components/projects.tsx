@@ -29,6 +29,22 @@ const projects = [
     type: "Web Application",
   },
   {
+    title: "Intern Bingo Board",
+    period: "June 2025",
+    description:
+      "Developed a playful web app for interns to track common workplace catchphrases and behaviors. Features daily phrase shuffling, Firebase user authentication, and persistent score tracking.",
+    technologies: ["React", "Firebase", "Next.js", "Tailwind CSS"],
+    type: "Web Application",
+  },
+  {
+    title: "Personal Portfolio Website",
+    period: "June 2025",
+    description:
+      "Built this portfolio site from scratch to showcase my work, experience, and projects. Includes custom animations, responsive design, and GitHub Pages deployment.",
+    technologies: ["React", "Vite", "Tailwind CSS", "GitHub Actions"],
+    type: "Personal Project",
+  },
+  {
     title: "YouTube Collaboration Networks Research",
     period: "July - August 2022",
     description:
@@ -37,6 +53,7 @@ const projects = [
     publication: "iConference 2023, Barcelona, Spain",
     type: "Research Project",
   },
+
 ];
 
 export default function Projects() {
