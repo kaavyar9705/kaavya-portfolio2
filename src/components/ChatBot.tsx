@@ -129,12 +129,15 @@ Question: ${input}
       );
 
       const data = await response.json();
-      const botText =
+      const rawBotText =
         data.choices?.[0]?.message?.content?.trim() || "No response.";
+
+      // ✅ Sanitize to remove weird control characters
+      const cleanBotText = rawBotText.replace(/[^\x09\x0A\x0D\x20-\x7E]/g, "");
 
       setMessages((prev) => [
         ...prev,
-        { sender: "bot", text: marked.parse(botText) },
+        { sender: "bot", text: marked.parse(cleanBotText) },
       ]);
     } catch (err) {
       console.error("Error response:", err);
