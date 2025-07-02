@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { marked } from "marked";
 
 export default function ChatBot() {
@@ -19,9 +18,7 @@ export default function ChatBot() {
     setMessages((prev) => [...prev, userMessage]);
     setInput("");
     setLoading(true);
-
-    try {
-      const prompt = `
+    const prompt = `
 You are a helpful AI assistant embedded on Kaavya Radhakrishnan's portfolio website. You have detailed knowledge of her background, experience, projects, skills, AND her personality quirks that make her unique.
 
 Format your responses using Markdown:
@@ -120,43 +117,32 @@ Format your responses using Markdown:
 
 Question: ${input}
 `;
-
-      const response = await axios.post(
-        "https://openrouter.ai/api/v1/chat/completions",
+    try {
+      const response = await fetch(
+        "https://api-backend-lmpka2yyt-kaavyar9705s-projects.vercel.app/api/chat",
         {
-          model: "mistralai/mistral-7b-instruct",
-          messages: [
-            { role: "system", content: "You are a helpful assistant." },
-            { role: "user", content: prompt },
-          ],
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer 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`,
-            "HTTP-Referer": "https://kaavyar9705.github.io",
-            "X-Title": "Kaavya Portfolio Chatbot",
-          },
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ input: prompt }),
         }
       );
 
-      const botMessage = {
-        sender: "bot",
-        text: marked.parse(response.data.choices[0].message.content.trim()),
-      };
+      const data = await response.json();
+      const botText =
+        data.choices?.[0]?.message?.content?.trim() || "No response.";
 
-      setMessages((prev) => [...prev, botMessage]);
+      setMessages((prev) => [
+        ...prev,
+        { sender: "bot", text: marked.parse(botText) },
+      ]);
     } catch (err) {
-      const error = err as any;
-      console.error(
-        "Error response:",
-        JSON.stringify(error.response?.data, null, 2) || error.message
-      );
+      console.error("Error response:", err);
       setMessages((prev) => [
         ...prev,
         { sender: "bot", text: "Sorry, something went wrong." },
       ]);
     }
+
     setLoading(false);
   };
 
@@ -165,16 +151,12 @@ Question: ${input}
       {minimized ? (
         <button
           onClick={() => setMinimized(false)}
-          className="w-full bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600
-          text-white py-2 px-4 rounded-lg shadow-lg font-semibold"
+          className="w-full bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 text-white py-2 px-4 rounded-lg shadow-lg font-semibold"
         >
           💬 Chat with me
         </button>
       ) : (
-        <div
-          className="bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600
-        shadow-lg rounded-lg border border-gray-200 flex flex-col"
-        >
+        <div className="bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 shadow-lg rounded-lg border border-gray-200 flex flex-col">
           <div className="flex items-center justify-between p-4 text-white font-semibold">
             Ask Me Anything!
             <button
