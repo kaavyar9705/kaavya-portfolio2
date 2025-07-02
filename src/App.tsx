@@ -7,6 +7,7 @@ import Projects from "@/components/projects";
 import Contact from "@/components/contact";
 import Navigation from "@/components/navigation";
 import "./index.css";
+import ChatBot from "./components/ChatBot";
 
 export default function Portfolio() {
   return (
@@ -21,6 +22,7 @@ export default function Portfolio() {
         <Projects />
         <Contact />
       </main>
+      <ChatBot></ChatBot>
     </div>
   );
 }

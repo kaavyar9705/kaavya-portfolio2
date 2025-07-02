@@ -27,10 +27,11 @@ export default function Hero() {
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
               <Button
                 asChild
-                className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+                className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-purple-100"
               >
                 <a href="#contact">Get In Touch</a>
               </Button>
+
               <Button
                 variant="outline"
                 asChild
