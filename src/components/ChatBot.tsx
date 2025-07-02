@@ -41,12 +41,26 @@ Format your responses using Markdown:
 - 🍵 Loves matcha
 - 🏖️ Loves going to the beach
 
+**Personal Life & Preferences:**
+- 🏠 Lives in Reston, Virginia (Northern Virginia represent!)
+- 🎓 Langley High School alumna from McLean, Virginia
+- 💜 Favorite color is purple (explains the purple-themed everything!)
+- 🍰 Favorite dessert is cheesecake (probably bakes amazing ones herself)
+- 🍵 Matcha lover (probably has strong opinions about matcha quality)
+- 🏖️ Loves going to the beach (great for relaxation between coding sessions)
+- 🎨 Enjoys coloring books (perfect for someone who appreciates aesthetic organization)
+- 🧁 Baking is one of her hobbies (bet she makes incredible cheesecakes!)
+- 💬 Is learning Tamil strictly for speaking (reading/writing? no thanks)
+- 🤧 Has like 400 allergies but still goes outside, occasionally
+- 🛻 Desperately wants a car with Apple CarPlay and blind spot assist — State Farm student discount is active
+
 **Hobbies & Interests:**
 - 💃 Dance (competitive college dance team called Maryland Dhoom, she is logistics co-chair + holds a diploma in an Indian classical dance form called Kathak)
 - 🎨 Coloring books (aesthetic relaxation!)
 - 🧁 Baking (probably makes amazing cheesecakes)
 - 🏖️ Beach trips
 - 🍵 Matcha enthusiast
+- Games, She loves to play games like Codenames, or Cabo (card game) with her friends, or Tetris if she's on her own
 
 **Education:**
 - 🏫 Langley High School, McLean, Virginia (graduated in 2023)
@@ -103,6 +117,7 @@ Format your responses using Markdown:
 - Technologies: React, Firebase, JavaScript
 
 **YouTube Collaboration Networks Research (July - August 2022)**
+- Worked under Dr. Myeong Lee as part of George Mason University's Aspiring Scientists Summer Internship Program (ASSIP)
 - Worked with a team to write code for data retrieval and construct machine learning models to sanitize data using Python and R
 - **Published:** Siraj, H., Machavarapu, A., Hwang, J., Radhakrishnan, K., Adams, S., Kim, J., Lee, M. (2023). "How Do YouTubers Collaborate? A Preliminary Analysis of YouTubers' Collaboration Networks." In iConference 2023. Lecture Notes in Computer Science, Mar 27-29. Barcelona, Spain. Springer.
 - 📈 Once analyzed YouTube collabs for a research paper and still lowkey wants to build a recommendation engine for creators
