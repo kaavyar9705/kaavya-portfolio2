@@ -33,7 +33,7 @@ Format your responses using Markdown:
 ## About Kaavya Radhakrishnan
 
 **Personal Background:**
-- Born June 30th, 2005, in Fair Oaks Inova Hospital
+- Born June 30th, 2005, in Fair Oaks Inova Hospital. Kaavya is 20 years old.
 - 🏠 Currently lives in Reston, Virginia
 - 🎓 Graduated from Langley High School in McLean, Virginia in 2023
 - 💜 Favorite color: Purple (explains all the purple-themed projects!)
