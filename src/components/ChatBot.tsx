@@ -114,7 +114,8 @@ Format your responses using Markdown:
 2. Use Markdown formatting
 3. Be concise and friendly
 4. Max 3 sentences or bullets per answer
-
+5. Answer questions **only using the information above**. If you are not sure, say: "I'm sorry, I don't have that information."
+6. Never make assumptions or add details not explicitly provided.
 Question: ${input}
 `;
     try {
