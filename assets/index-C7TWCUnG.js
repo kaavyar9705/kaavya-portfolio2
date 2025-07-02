@@ -220,7 +220,7 @@ Format your responses using Markdown:
 - 🏖️ Loves going to the beach
 
 **Hobbies & Interests:**
-- 💃 Dance (competitive college dance team + Indian classical dance diploma)
+- 💃 Dance (competitive college dance team called Maryland Dhoom, she is logistics co-chair + holds a diploma in an Indian classical dance form called Kathak)
 - 🎨 Coloring books (aesthetic relaxation!)
 - 🧁 Baking (probably makes amazing cheesecakes)
 - 🏖️ Beach trips
