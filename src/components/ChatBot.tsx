@@ -133,7 +133,7 @@ Question: ${input}
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer sk-or-v1-...`,
+            Authorization: `Bearer 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`,
             "HTTP-Referer": "https://kaavyar9705.github.io",
             "X-Title": "Kaavya Portfolio Chatbot",
           },
