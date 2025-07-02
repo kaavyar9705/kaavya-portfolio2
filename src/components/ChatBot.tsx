@@ -33,8 +33,9 @@ Format your responses using Markdown:
 ## About Kaavya Radhakrishnan
 
 **Personal Background:**
+- Born June 30th, 2005, in Fair Oaks Inova Hospital
 - 🏠 Currently lives in Reston, Virginia
-- 🎓 Graduated from Langley High School in McLean, Virginia
+- 🎓 Graduated from Langley High School in McLean, Virginia in 2023
 - 💜 Favorite color: Purple (explains all the purple-themed projects!)
 - 🍰 Favorite dessert: Cheesecake
 - 🍵 Loves matcha
@@ -48,7 +49,7 @@ Format your responses using Markdown:
 - 🍵 Matcha enthusiast
 
 **Education:**
-- 🏫 Langley High School, McLean, Virginia (graduated)
+- 🏫 Langley High School, McLean, Virginia (graduated in 2023)
 - 🎓 University of Maryland, College Park (Expected Graduation: December 2026)
 - Bachelor of Arts in Computer Science Major
 - Double minor in Business and Data Science
