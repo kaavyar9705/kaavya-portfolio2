@@ -2,19 +2,21 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award } from "lucide-react";
 
+const BASE_URL = import.meta.env.BASE_URL || "/kaavya-portfolio2/";
+
 const projects = [
   {
     title: "Lunari - Women's Wellness App",
-    period: "November 2024 - Present",
+    period: "November 2024 – Present",
     description:
       "Co-developed Lunari, a personalized women's wellness app that leverages machine learning to provide tailored health insights based on menstrual cycle data. Awarded 'Best Active-Wellness/Health Hack' at Technica 2024.",
     technologies: ["Flutter", "Figma", "Machine Learning", "Forest Regression"],
-    award: "Best Active-Wellness/Health Hack - Technica 2024",
-    type: "Mobile App",
+    award: "Best Active-Wellness/Health Hack – Technica 2024",
+    type: "Web Application",
   },
   {
     title: "Snowflake Analytics Dashboard",
-    period: "May 2025 - Present",
+    period: "May 2025 – Present",
     description:
       "Building a full-stack analytics dashboard to visualize credit usage, user activity, and query performance. Features dynamic data masking policy configuration and Gemini API-powered suggestions.",
     technologies: ["React", "Flask", "Snowflake", "Gemini API"],
@@ -22,9 +24,9 @@ const projects = [
   },
   {
     title: "Winrock International Web App",
-    period: "September 2024 - Present",
+    period: "September 2024 – Present",
     description:
-      "Building a React/Firebase web application to streamline data collection and project tracking for a global nonprofit organization, impacting operations worldwide.",
+      "Developing a React/Firebase web application to streamline data collection and project tracking for a global nonprofit organization, impacting operations worldwide.",
     technologies: ["React", "Firebase", "JavaScript"],
     type: "Web Application",
   },
@@ -34,8 +36,8 @@ const projects = [
     description:
       "Developed a playful web app for interns to track common workplace catchphrases and behaviors. Features daily phrase shuffling, Firebase user authentication, and persistent score tracking.",
     technologies: ["React", "Firebase", "Next.js", "Tailwind CSS"],
-    type: "Web Application",
-    image: "kaavya-portfolio2/images/bingo.png",
+    type: "Personal Project",
+    image: `${BASE_URL}images/bingo.png`,
   },
   {
     title: "Personal Portfolio Website",
@@ -47,7 +49,7 @@ const projects = [
   },
   {
     title: "YouTube Collaboration Networks Research",
-    period: "July - August 2022",
+    period: "July – August 2022",
     description:
       "Worked with a team to write code for data retrieval and construct machine learning models to sanitize data using Python and R. Published in George Mason academic journals and iConference journal.",
     technologies: ["Python", "R", "Machine Learning", "Data Analysis"],
@@ -96,7 +98,8 @@ export default function Projects() {
                   </div>
                 )}
               </CardHeader>
-              <CardContent className="flex-1 flex flex-col">
+
+              <CardContent className="flex flex-col flex-1">
                 {project.image && (
                   <img
                     src={project.image}
@@ -105,9 +108,7 @@ export default function Projects() {
                   />
                 )}
 
-                <p className="text-gray-600 mb-4 flex-1">
-                  {project.description}
-                </p>
+                <p className="text-gray-600 mb-4">{project.description}</p>
 
                 {project.publication && (
                   <p className="text-sm text-green-600 font-medium mb-4">
@@ -115,7 +116,7 @@ export default function Projects() {
                   </p>
                 )}
 
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, techIndex) => (
                     <Badge key={techIndex} variant="secondary">
                       {tech}
