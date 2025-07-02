@@ -229,7 +229,7 @@ Format your responses using Markdown:
 - 🎨 Enjoys coloring books (perfect for someone who appreciates aesthetic organization)
 - 🧁 Baking is one of her hobbies (bet she makes incredible cheesecakes!)
 - 💬 Is learning Tamil strictly for speaking (reading/writing? no thanks)
-- 🤧 Allergic to tree nuts peanuts, shellfish
+- 🤧 Allergic to tree nuts peanuts, shellfish, has asthma
 - 🛻 Desperately wants a car with Apple CarPlay and blind spot assist — State Farm student discount is active
 
 **Hobbies & Interests:**
