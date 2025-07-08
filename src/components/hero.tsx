@@ -78,7 +78,7 @@ export default function Hero() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full blur-2xl opacity-30 scale-110"></div>
               <img
-                src="/kaavya-portfolio2/images/headshot.jpg"
+                src="/images/headshot.jpg"
                 alt="Kaavya Radhakrishnan"
                 className="relative w-80 h-80 object-cover rounded-full shadow-2xl border-4 border-white"
               />
