@@ -1,0 +1,16 @@
+{
+    "redirects": [
+      {
+        "source": "/(.*)",
+        "has": [
+          {
+            "type": "host",
+            "value": "kaavyakri.me"
+          }
+        ],
+        "destination": "https://www.kaavyakri.me/$1",
+        "permanent": true
+      }
+    ]
+  }
+  
